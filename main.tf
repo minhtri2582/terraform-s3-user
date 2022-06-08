@@ -22,12 +22,13 @@ resource "aws_s3_bucket" "bucket" {
     enabled = "${var.versioning}"
   }
 
-  tags {
+  tags = {
     team          = "${var.tag_team}"
     application   = "${var.tag_application}"
     environment   = "${var.tag_environment}"
     contact-email = "${var.tag_contact-email}"
-    customer      = "${var.tag_customer}"
+    creator      = "${var.tag_creator}"
+    project       = "${var.tag_project}"
   }
 
     lifecycle_rule {
