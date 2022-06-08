@@ -21,6 +21,12 @@ variable "tag_contact-email" {}
 //customer
 variable "tag_customer" {}
 
+// creator
+variable "tag_creator" {}
+
+// project       
+variable "tag_project" {}       
+
 //incomplete multipart upload deletion
 variable "multipart_delete" {
   default = true
