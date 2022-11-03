@@ -3,7 +3,7 @@ variable "bucket_name" {}
 
 //enable versioning
 variable "versioning" {
-  default = false
+  default = "Disabled"
 }
 
 //environment
